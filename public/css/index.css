@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+    background-image: url("https://img.freepik.com/free-vector/physician-visit-cartoon-composition_1284-25919.jpg?w=740");
+
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+    
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+
+h2{
+    margin: 10px 10px;
+    
+}
+
+.form-container{
+    /* border: 1px solid red; */
+    margin-top: 10px;
+    padding-left: 20px;
+    
+   
+}
+
+.form{
+    /* border: 10px solid blue; */
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.name,.phone,.address,.date,.time{
+    height: 70px;
+    padding-left: 10px;
+}
+.name-input,.phone-input,.address-input{
+    border-radius: 10px;
+    border: none;
+}
+
+label{
+    font-size: 30px;
+    
+}
+input{
+    display: block;
+    margin-top: 10px;
+    height: 40px;
+}
+
+button{
+    width: 90px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 20px 120px ;
+    font-size: 20px;
+    background-color: cadetblue;
+
+    
+}
