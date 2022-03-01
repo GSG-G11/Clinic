@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "env2": "^2.2.2",
     "express": "^4.17.3",
     "pg": "^8.7.3"
   },
@@ -14,8 +15,9 @@
     "supertest": "^6.2.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon src/index.js"
+    "start": "NODE_ENV=production node src/index.js",
+    "dev": " NODE_ENV=development nodemon src/index.js",
+    "test": "NODE_ENV=test jest"
   },
   "repository": {
     "type": "git",
