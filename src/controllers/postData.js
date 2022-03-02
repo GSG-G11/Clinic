@@ -4,7 +4,7 @@ const postData = (req, res, next) => {
   const { name, date, time } = req.body;
   console.log(date);
 
-  return getPatientId(name)
+  getPatientId(name)
     .then((data) => {
       console.log('data', data);
       return addAppointment(date, time, data);

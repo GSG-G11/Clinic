@@ -48,6 +48,7 @@ form.addEventListener('submit', (e) => {
     },
     method: 'POST',
     body: JSON.stringify({
+      name: patientName.value,
       date: date.value,
       time: time.value,
     }),
