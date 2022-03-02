@@ -5,12 +5,8 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-body {
-  background-image: url('https://img.freepik.com/free-vector/physician-visit-cartoon-composition_1284-25919.jpg?w=740');
-
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+html {
+  background-color: rgb(59, 59, 66);
 }
 
 h1 {
@@ -24,14 +20,12 @@ h2 {
 }
 
 .form-container {
-  /* border: 1px solid red; */
   margin-top: 10px;
   padding-left: 20px;
 }
 
 .form {
-  /* border: 10px solid blue; */
-  height: 70vh;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -62,6 +56,20 @@ input {
 }
 
 .button {
+  width: 90px;
+  height: 40px;
+  border-radius: 10px;
+  margin: 20px 120px;
+  font-size: 20px;
+  background-color: cadetblue;
+}
+#new-patient {
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#new-patient-button {
   width: 90px;
   height: 40px;
   border-radius: 10px;
