@@ -9,9 +9,9 @@
   </head>
   <body>
     <h1>Clinic App</h1>
+    <h2>New patient ?</h2>
     <div class="form-container">
-      <form class="form">
-        <h2>Book your appointment</h2>
+      <form id="new-patient">
         <div class="name">
           <label for="Name">Name</label>
           <input
@@ -42,6 +42,21 @@
             required
           />
         </div>
+        <input type="submit" id='new-patient-button' / >
+      </form>
+    </div>
+    <div class="form-container">
+      <form class="form">
+        <h2>Book your appointment</h2>
+        <input
+          name="patients"
+          type="text"
+          placeholder="search for a patient..."
+          class="input-patient"
+          list="patients"
+          autocomplete="off"
+        />
+        <datalist id="patients" class="data-list"></datalist>
         <div class="date">
           <label for="date">Date</label>
           <input
@@ -66,7 +81,7 @@
       </form>
     </div>
     <a href="/appointments"> click here to see appointments</a>
-
+    <script src="./js/helpers.js"></script>
     <script src="./js/index.js"></script>
   </body>
 </html>
