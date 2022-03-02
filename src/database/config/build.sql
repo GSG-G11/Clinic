@@ -7,7 +7,7 @@ CREATE TABLE patients (id SERIAL  PRIMARY KEY , full_name VARCHAR(50
 
 CREATE TABLE appointments (id serial PRIMARY KEY ,date VARCHAR(50),time VARCHAR(20),patient_id INT,FOREIGN KEY (patient_id) REFERENCES patients(id));
 
-INSERT INTO patients (full_name,phone_number) VALUES ('wessal','0599');                                                                              
+INSERT INTO patients (full_name,phone_number,Address) VALUES ('wessal','0599999999','Gaza');                                                                              
 INSERT INTO appointments (date,time,patient_id) VALUES ('3-3','13:00'
  ,1) ;                                                                           
 
