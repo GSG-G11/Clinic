@@ -8,12 +8,8 @@ const patientForm = document.querySelector('#new-patient');
 const dataList = document.querySelector('.data-list');
 const patientName = document.querySelector('.input-patient');
 
-patientName.addEventListener('change', () => {
-  console.log(patientName.value);
-});
 fetch('/getPatient').then((res) =>
   res.json().then((patients) => {
-    console.log(patients);
     patients.forEach((element) => {
       const name = elementWithValue('option', element.full_name);
       appendElement(dataList, name);
